@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gráfico de Finanzas</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+
+    <body>
+
+        <!-- Nav bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Administrador de Finanzas</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Página principal</a>
+                        <a class="nav-link" href="./add_transaction.html">Agregar transacción</a>
+                        <a class="nav-link">Gráfico de finanzas</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <h1 class="mt-4">Gráfico de finanzas</h1>
+            <!-- <a href="../backend/index.php" class="btn btn-primary mb-3">Back to Home</a> -->
+            <div class="row" align="center">
+                <div class="col-md-6">
+                    <h3>Ingresos mensuales</h3>
+                    <canvas id="incomeChart"></canvas>
+                </div>
+                <div class="col-md-6">
+                    <h3>Gastos mensuales</h3>
+                    <canvas id="expenseChart"></canvas>
+                </div>
+            </div>
+            <div class="row" align="center" id="dashboard-ganancias">
+                <div class="col-md-6">
+                    <h3>Ganancias Mensuales</h3>
+                    <canvas id="gainChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="./js/scripts_dashboard.js"></script>
+    </body>
+
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Administrador de Finanzas
+        </div>
+    </footer>
+
+</html>

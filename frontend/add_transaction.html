@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agregar Transacción</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    
+    <body>
+
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Administrador de Finanzas</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Página principal</a>
+                        <a class="nav-link">Agregar transacción</a>
+                        <a class="nav-link" href="./dashboard.html">Gráfico de finanzas</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div class="container">
+            <h1 class="mt-4">Agregar transacción</h1>
+            <form id="transaction-form">
+                <div class="form-group">
+                    <label for="type">Tipo</label>
+                    <select id="type" class="form-control">
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Monto</label>
+                    <input type="number" id="amount" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Fecha</label>
+                    <input type="date" id="date" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Agregar transacción</button>
+            </form>
+        </div>
+
+        <script src="./js/scripts_add_transaction.js"></script>
+
+    </body>
+
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Administrador de Finanzas
+        </div>
+    </footer>
+</html>
